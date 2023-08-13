@@ -12,3 +12,9 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://localhost:4000/auth/realms/Omega
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
