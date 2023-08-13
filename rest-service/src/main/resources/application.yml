@@ -12,3 +12,9 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://keycloak-auth:4000/auth/realms/Alpha
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
