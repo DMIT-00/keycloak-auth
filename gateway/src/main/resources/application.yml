@@ -29,6 +29,5 @@ spring:
           my_client_a:
             provider: keycloak
             client-id: Omega
-            client-secret: -
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
