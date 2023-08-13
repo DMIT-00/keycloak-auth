@@ -21,13 +21,13 @@ spring:
       client:
         provider:
           keycloak:
-            token-uri: http://localhost:4000/auth/realms/Omega/protocol/openid-connect/token
-            authorization-uri: http://localhost:4000/auth/realms/Omega/protocol/openid-connect/auth
-            user-info-uri: http://localhost:4000/auth/realms/Omega/protocol/openid-connect/userinfo
+            token-uri: http://keycloak-auth:4000/auth/realms/Alpha/protocol/openid-connect/token
+            authorization-uri: http://keycloak-auth:4000/auth/realms/Alpha/protocol/openid-connect/auth
+            user-info-uri: http://keycloak-auth:4000/auth/realms/Alpha/protocol/openid-connect/userinfo
             user-name-attribute: preferred_username
         registration:
-          my_client_a:
+          alpha_client:
             provider: keycloak
-            client-id: Omega
+            client-id: Alpha-Client
             authorization-grant-type: authorization_code
             redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
